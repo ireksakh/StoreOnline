@@ -1,0 +1,15 @@
+create database if not exists `shop`;
+use `shop`;
+create table if not exists `product`(
+`id` int(5) not null auto_increment,
+`product_name` varchar(200) not null,
+`price` int(5) not null,
+primary key (`id`)
+);
+
+insert into `product` (`id`,`product_name`,`price`) values
+(1,'Dell',1000),
+(2,'Lenovo',800),
+(3,'MacBook',1500),
+(4,'Acer',1000),
+(5,'Asus',900);
